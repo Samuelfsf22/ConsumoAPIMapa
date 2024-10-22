@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta De Locais Com OpenLayers e Vite</title>
+  <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+
+<body>
+  <section>
+    <div class="divSeila">
+      <div class="divConteudo" id="divCEP">
+        <label for="">CEP</label>
+        <input type="text" id="inputCEP">
+        <label for="">Logradouro</label>
+        <input type="text" id="inputLogradouro">
+
+        <div class="divBtns">
+          <button id="btnEscolherCoordenadas">COORDENADAS</button>
+          <button id="btnEnviaViaCEP">ENVIAR</button>
+        </div>
+      </div>
+
+      <div class="divConteudo invisivel" id="divCoordenada">
+        <label for="">Coordenada X</label>
+        <input type="text" id="inputCoordenadaX">
+        <label for="">Coordenada Y</label>
+        <input type="text" id="inputCoordenadaY">
+
+        <div class="divBtns">
+          <button id="btnEscolherCEP">CEP</button>
+          <button id="btnEnviaViaCoordenada">ENVIAR</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <main class="molduraMapa">
+      <div id="map">
+
+      </div>
+    </main>
+  </section>
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="js/funcoesBtns.js"></script>
+</body>
+
+</html>
